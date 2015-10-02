@@ -7,7 +7,13 @@
 	text-align: center;
 }
 
+.row {
+	background-color: #ebf97a;
+	margin-right: 100px;
+}
+
 .well {
+	background-color: #45e8e5;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-top: 40px;
@@ -24,5 +30,5 @@
 }
 
 .container-fluid {
-	background-color: #EE4000;
+	background-color: #4de845;
 }

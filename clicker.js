@@ -1,17 +1,17 @@
-var Clicker = function(button){
-	this.button = button;
+var Clicker = function(count){
+	this.count = count;
 };
 
 
 Clicker.prototype.counter = function() {
-	for (var i = 0; i <= 50; i ++) {
-    	if(document.getElementById(this.counter).clicked == true) {
-  			i++;
-        	alert("You are visitor number " + i + "!");
-        }
-    }
+	this.count += 1;
+	console.log(this.count);
+	document.getElementById("counter").innerHTML = this.count;
 };
 
-var siteCounter = new Clicker("btn btn-danger");
 
-siteCounter();
+
+//var siteCounter = new Clicker(0);
+
+//console.log(siteCounter.count);
+

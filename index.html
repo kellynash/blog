@@ -16,12 +16,13 @@
 	  			<h1>Stuff I've learned. <small>It's a lot!</small></h1>
 		</div><!--closes page-header-->
 		
-		<div class="ttt-grid col-xs-offset-2">
+		<div class="picskills col-xs-offset-2">
 			<div class="row">
 				<div id="picture" class="col-xs-6 cell">
 					<p><img src="IMG_2242.jpg"></img></p>
-					<p>Note to Doug: I couldn't find a solo picture of myself, so here I am with my daughter.</p>
-				</div><!--closes row-->
+					<p>Note to Doug: I couldn't find a solo picture of myself,</p> 
+					<p>so here I am with my daughter.</p>
+				</div><!--closes picture-->
 
 				<div id="skills" class="col-xs-6 cell">
 					<h2>These are my skills</h2>
@@ -34,11 +35,31 @@
 						  <li class="list-group-item">GitHub</li>
 						</ul>
 				</div><!--closes skills-->
-
 			</div><!--closes row-->
-		</div><!--closes offset-->
+		</div><!--closes picskills offset-->
+
+		<div class="well well-sm">
+			<div class="btn-group btn-group-justified" role="group" aria-	
+			label="...">
+			<div class="btn-group" role="group">
+			<button type="button" class="btn btn-default">Resume</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">GitHub</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">References</button>
+			</div>
+		</div><!--closes well-sm-->
+
 	</div><!--closes container=fluid-->
+
+	<div class="footer">
+		<button onclick="siteCounter();" id="counter" type="submit" class="btn btn-danger">Site Counter: Click Me!</button>
+	</div><!--closes footer-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="clicker.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>

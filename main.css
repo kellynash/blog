@@ -1,0 +1,24 @@
+.jumbotron {
+	background-color: #888;
+	text-align: center;
+}
+
+.page-header {
+	text-align: center;
+}
+
+.well {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.picskills {
+	margin-top: 50px;
+
+}
+
+#picture {
+	padding-top: 20px;
+}

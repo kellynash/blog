@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="...">
+					</a>
+				</div>
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">Portfolio</a></li>
+					<li role="presentation"><a href="#">About Me</a></li>
+					<li role="presentation"><a href="#">Blog</a></li>
+					<li role="presentation"><a href="#">Contact Info</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div id="header">
+			<div class="container-fluid">
+				<div class="jumbotron">
+					<h1>Kelly Nash</h1>
+					<p>Code student extraordinaire.</p>
+				</div><!--closes jumbotron-->
+
+				<div class="page-header">
+					<h1>Stuff I've learned. <small>It's a lot!</small></h1>
+				</div><!--closes page-header-->
+		</div><!--closes id header-->
+
+		<div id="content">
+			<div class="picskills col-xs-offset-1">
+				<div class="row">
+					<div id="picture" class="col-xs-6 cell">
+						<p><img id="KellyPic" src="IMG_2242round.png"></img></p>
+						<p>Add a new picture of me here.  Keep the circular styling.</p>
+					</div><!--closes picture-->
+
+					<div id="contact-info" class="col-xs-6 cell">
+						<h3>I'd love to hear from you!</h3>
+						<h4>CONTACT INFORMATION</h4>
+							<p>Kelly Nash</p>
+							<p>18 September Drive</p>
+							<p>Missoula, MT 59802</p>
+							<p>cell: 406.493.2568</p>
+							<p>kellynash@gmail.com</p>
+					</div><!--closes contact info-->
+				</div><!--closes row-->
+			</div><!--closes picskills offset-->
+		
+			<div class="well well-sm">
+				<div class="btn-group btn-group-justified" role="group" aria-	
+				label="...">
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">Resume</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">GitHub</button>
+				</div>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default">References</button>
+				</div>
+			</div><!--closes well-sm-->
+		</div><!--closes id content wrapper-->
+		</div><!--closes container=fluid-->
+
+
+		<div id="footer">
+			<div class="footer">
+				<p>If you like this site, click the button below!</p>
+				<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
+			</div><!--closes footer-->
+		</div><!--closed id footer wrapper-->
+	</div><!--closes wrapper-->
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="clicker.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

@@ -34,5 +34,10 @@
 }
 
 .navbar-header {
-	padding-right: 70%;
+	padding-right: 60%;
+}
+
+.navbar {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

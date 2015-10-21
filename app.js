@@ -1,1 +1,0 @@
-var siteCounter = new Clicker(0);

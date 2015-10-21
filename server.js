@@ -8,6 +8,8 @@ var blogModel = require('./model/blog');
 
 var app = express();
 
+app.set('port', (preocess.env.PORT || 5000));
+
 var blogRoutes = require('./routes/blog');
 
 app.use(express.static('public'));

@@ -19,22 +19,22 @@ $(window).load(function() {
 
 var BlogList = React.createClass({
 	//Loop through our data and create tweets
-    render: function() {
-    	var blogData = this.props.data.map(function(blogItem){
-    		return (
-    			
- 	<article className="panel panel-default col-xs-10 col-xs-offset-1">
-	<header className="panel-heading">
-		<h3 className="panel-title">{blogItem.title}</h3>
-	</header>
-	<section className="article-body">{blogItem.body}</section>
-	</article>
-    		);
-    	});
+	render: function() {
+		var blogData = this.props.data.map(function(blogItem){
+			return (
+				
+				<article className="panel panel-default col-xs-10 col-xs-offset-1">
+				<header className="panel-heading">
+				<h3 className="panel-title">{blogItem.title}</h3>
+				</header>
+				<section className="article-body">{blogItem.body}</section>
+				</article>
+				);
+		});
 
-        return (
-        <div>
-          	{blogData}
+		return (
+			<div>
+			{blogData}
         </div>
         );
     }

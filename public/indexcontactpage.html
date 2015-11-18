@@ -4,93 +4,92 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./css/main2.css">
+	<title>Kelly Nash, Junior Web Developer</title>
 </head>
 <body>
-	<div class="container-fluid" id="wrapper">
-	<div class="photowrapper">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">
-						<img alt="Brand" src="...">
-					</a>
+	<div class="jumbotron page-image">
+		<div class="navigation">
+			<nav class="navbar navbar-default-transparent">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="inside-jumbotron">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About Me</a></li>
+					</ul>	
 				</div>
-				<ul class="nav nav-pills">
+			</nav>
+			<div class="header">
+				<h1>Kelly Nash</h1>
+				<h3>Junior Web Developer</h3>
+					<!--<li><a href="#">Contact</a></li>
+	 				<li><a href="#">Resume</a></li> -->
+	 			<div class="center-block" style="max-width:100px">
+					<button type="button" class="btn btn-default btn-md">Resume</button> 
+				</div>
+			</div><!--close header-->	
+		</div><!--close navigation-->
+	</div><!--closes jumbotron-->
+
+	<div id="content">
+		<div class="picskills col-xs-offset-1">
+			<div class="row">
+				<div id="picture" class="col-xs-6 cell">
+					<p><img id="KellyPic" src="images/IMG_2242round.png"></img></p>
+				</div><!--closes picture-->
+
+				<div id="contactpage-info" class="col-xs-6 cell">
+					<h3>I'd love to hear from you!</h3>
+					<h4>CONTACT INFORMATION</h4>
+						<p>Kelly Nash</p>
+						<p>18 September Drive</p>
+						<p>Missoula, MT 59802</p>
+						<p>cell: 406.493.2568</p>
+						<p>kellynash@gmail.com</p>
+				</div><!--closes contact info-->
+			</div><!--closes row-->
+		</div><!--closes picskills offset-->
+	</div><!--closes id content wrapper-->
+		
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<ul class="nav navbar-nav collapse navbar-collapse">
 					<li role="presentation" class="active"><a href="index.html">Home</a></li>
 					<li role="presentation"><a href="#">Portfolio</a></li>
 					<li role="presentation"><a href="indexblog.html">Blog</a></li>
 					<li role="presentation"><a href="#">About Me</a></li>
-					<li role="presentation"><a href="indexcontactpage.html">Contact Info</a></li>
-				</ul>
+					<li role="presentation"><a href="indexcontactpage.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-		</nav>
-		
-		<div id="header">
-			<div class="container-fluid">
-				<div class="jumbotron">
-					<h1>Kelly Nash</h1>
-					<p>Code student extraordinaire.</p>
-				</div><!--closes jumbotron-->
-
-				<div class="page-header">
-					<h1>Stuff I've learned. <small>It's a lot!</small></h1>
-				</div><!--closes page-header-->
-		</div><!--close photowrapper-->
-		</div><!--closes id header-->
-
-		<div id="content">
-			<div class="picskills col-xs-offset-1">
-				<div class="row">
-					<div id="picture" class="col-xs-6 cell">
-						<p><img id="KellyPic" src="images/IMG_2242round.png"></img></p>
-						<p>Add a new picture of me here.  Keep the circular styling.</p>
-					</div><!--closes picture-->
-
-					<div id="contact-info" class="col-xs-6 cell">
-						<h3>I'd love to hear from you!</h3>
-						<h4>CONTACT INFORMATION</h4>
-							<p>Kelly Nash</p>
-							<p>18 September Drive</p>
-							<p>Missoula, MT 59802</p>
-							<p>cell: 406.493.2568</p>
-							<p>kellynash@gmail.com</p>
-					</div><!--closes contact info-->
-				</div><!--closes row-->
-			</div><!--closes picskills offset-->
-		
-			<div class="well well-sm">
-				<div class="btn-group btn-group-justified" role="group" aria-	
-				label="...">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">Resume</button>
+			<div class="row">
+				<div class="icons col-xs-6 col-xs-offset-4">
+					<ul class="nav navbar-nav collapse navbar-collapse">
+					<li role="presentation"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
+					</ul>
 				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">GitHub</button>
+			</div>
+			<div class="row siteCounter">
+				<div class="col-xs-6 col-xs-offset-8">
+					<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
+					<p class="navbar-text">If you like this site, click the button!</p>
 				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">References</button>
-				</div>
-			</div><!--closes well-sm-->
-		</div><!--closes id content wrapper-->
-		</div><!--closes container=fluid-->
-
-
-		<div id="footer">
-			<div class="footer">
-				<p>If you like this site, click the button below!</p>
-				<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
-				<i class="fa fa-twitter fa-2x"></i>
-				<i class="fa fa-linkedin-square fa-2x"></i>
-				<i class="fa fa-github fa-2x"></i>
-			</div><!--closes footer-->
-		</div><!--closed id footer wrapper-->
-	</div><!--closes wrapper-->
+			</div>
+		</div><!--close container-->
+	</div><!--close footer-->
+	
 
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/clicker.js"></script>
 	<script src="js/app.js"></script>
 </body>
-
 </html>

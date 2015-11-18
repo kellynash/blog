@@ -4,58 +4,85 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./css/main2.css">
+	<title>Kelly Nash, Junior Web Developer</title>
 </head>
 
 <body>
 	<div id="wrapper">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">
-						<img alt="Brand" src="images/bruceleeround1.png">
-					</a>
-				</div>
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="index.html">Home</a></li>
-					<li role="presentation"><a href="#">Portfolio</a></li>
-					<li role="presentation"><a href="indexblog.html">Blog</a></li>
-					<li role="presentation"><a href="#">About Me</a></li>
-					<li role="presentation"><a href="indexcontactpage.html">Contact Info</a></li>
-				</ul>
-			</div>
-		</nav>
+		<div class="jumbotron page-image">
+			<div class="navigation">
+				<nav class="navbar navbar-default-transparent">
+					<div class="container-fluid">
+						<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="inside-jumbotron">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Me</a></li>
+						</ul>	
+					</div>
+				</nav>
+				<div class="header">
+					<h1>Welcome to My Blog!</h1>
+					<h3>Wherein I recount the trials and tribulations of code school.</h3>
+						<!--<li><a href="#">Contact</a></li>
+		 				<li><a href="#">Resume</a></li> -->
+				</div><!--close header-->	
+			</div><!--close navigation-->
+		</div><!--closes jumbotron-->
 
-	<div id="blog-list" class="container">
-
-		<article class="panel panel-default col-xs-10 col-xs-offset-1">
-			<header class="panel-heading">
-				<h3 class="panel-title">This will be my topic ERASE THIS ONEsentence.</h3>
-			</header>
-			<section class="article-body">
-				Spent the day trying to create a constructor function for a game board (grid).  The constructor function totally works (yay!!) but it broke the rest of my code (boooo!).  *sigh*  It seems for everything I learn there are hundreds of things I don’t know, tripping me up at every turn.  I spend an inordinate amount of my day hunting them down with Google searches. This, I understand, is an indicator that I've become a programmer!
-			</section>
-		</article>
-
-	</div><!--close id blog list-->
-	
-	<div class="container">
+		<div id="blog-list" class="container">
+			<article class="panel panel-default col-xs-10 col-xs-offset-1">
+				<header class="panel-heading">
+					<h3 class="panel-title">This will be my topic ERASE THIS ONEsentence.</h3>
+				</header>
+				<section class="article-body">
+					Spent the day trying to create a constructor function for a game board (grid).  The constructor function totally works (yay!!) but it broke the rest of my code (boooo!).  *sigh*  It seems for everything I learn there are hundreds of things I don’t know, tripping me up at every turn.  I spend an inordinate amount of my day hunting them down with Google searches. This, I understand, is an indicator that I've become a programmer!
+				</section>
+			</article>
+		</div><!--close id blog list-->
+		
 		<div class="footer">
-			<p>If you like this site, click the button below!</p>
-			<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
-		</div><!--closes footer-->
-	</div><!--closes container-->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3">
+						<ul class="nav navbar-nav collapse navbar-collapse">
+						<li role="presentation" class="active"><a href="index.html">Home</a></li>
+						<li role="presentation"><a href="#">Portfolio</a></li>
+						<li role="presentation"><a href="indexblog.html">Blog</a></li>
+						<li role="presentation"><a href="#">About Me</a></li>
+						<li role="presentation"><a href="indexcontactpage.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="icons col-xs-6 col-xs-offset-4">
+						<ul class="nav navbar-nav collapse navbar-collapse">
+						<li role="presentation"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li role="presentation"><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+						<li role="presentation"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+						<li role="presentation"><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row siteCounter">
+					<div class="col-xs-6 col-xs-offset-8">
+						<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
+						<p class="navbar-text">If you like this site, click the button!</p>
+					</div>
+				</div>
+			</div><!--close container-->
+		</div><!--close footer-->
 	</div><!--closes wrapper-->
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
 	<script src="js/clicker.js"></script>
 	<script type="text/jsx" src="js/app.js"></script>
 </body>
-
 </html>

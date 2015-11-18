@@ -1,0 +1,106 @@
+html {
+  position: relative;
+  min-height: 100%;
+} /* Position relative and min-height required for sticky footer; */
+
+body { 
+  font-family: 'Arimo', sans-serif;
+  padding-bottom: 70px; 
+  /*background-color: #EBEFFA;*/
+  /*background-color: rgb(88, 132, 212);*/
+  /*background-color: rgb(119, 167, 246);*/
+  background-color: rgb(128, 185, 245);
+  margin-bottom: 80px;  /* Margin bottom by footer height */
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin-top: -45px;
+}
+
+.jumbotron {
+  padding-bottom: 160px;
+}
+
+.page-image {
+  background: url("../images/glacier.png");
+  background-size: 100%;
+}
+
+.header h3 {
+  text-align: center;
+  margin-top: -1px;
+}
+
+.nav a {
+  color: black;
+  margin-top: -35px;
+  font-weight: 800;
+}
+
+.center-block button {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.skillset {
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+.skillset ul {
+  font-weight: 800;
+  text-align: center;
+}
+
+.briefback {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.briefcontent p {
+  font-weight: 800;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* indexcontactpage.html styles below
+-------------------------------------------------- */
+
+#contactpage-info h3 h4 p {
+  font-weight: 800px;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+/* Also see above in body: margin-bottom 60px required for sticky footer; */
+/* Also see above in html: position relative and min-height required for sticky footer; */
+.footer {
+  padding-top: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: #f5f5f5;
+}
+
+.icons {
+  padding-top: 20px;
+}
+
+.siteCounter {
+  padding-top: 40px;
+}
+
+
+

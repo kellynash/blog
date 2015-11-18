@@ -12,6 +12,7 @@ var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
+var githubRoutes = require('./routes/github');
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use(express.static('public'));
 // routes ======================================================================
 require('./routes/userRoutes.js')(app, passport); // load routes & pass in app & fully configed passport
 app.use('/api/blogs', blogRoutes);
+app.use('/api/github', githubRoutes);
 
 app.listen(app.get('port'), function() {
 	console.log('Node app is running on port', app.get('port'));

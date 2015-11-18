@@ -57,6 +57,4 @@ var BlogForm = React.createClass({
 });
 
 
-
-
 React.render(<BlogForm url="/api/blogs/"/>, document.getElementById('blogPost'));

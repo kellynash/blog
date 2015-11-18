@@ -1,4 +1,3 @@
-var siteCounter = new Clicker(0);
 
 $(window).load(function() {
 	//showMe();

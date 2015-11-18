@@ -9,6 +9,7 @@ Clicker.prototype.counter = function() {
 	document.getElementById("counter").innerHTML = this.count;
 };
 
+var siteCounter = new Clicker(0);
 
 
 //var siteCounter = new Clicker(0);

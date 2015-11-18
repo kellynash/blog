@@ -4,107 +4,104 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./css/main2.css">
+	<title>Kelly Nash, Junior Web Developer</title>
 </head>
-<body>
-	<div class="container-fluid" id="wrapper">
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">
-					
-					</a>
+
+<body>	
+	<div class="jumbotron page-image">
+		<div class="navigation">
+			<nav class="navbar navbar-default-transparent">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="inside-jumbotron">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About Me</a></li>
+					</ul>	
 				</div>
-				<ul class="nav nav-pills">
+			</nav>
+			<div class="header">
+				<h1>Kelly Nash</h1>
+				<h3>Junior Web Developer</h3>
+					<!--<li><a href="#">Contact</a></li>
+	 				<li><a href="#">Resume</a></li> -->
+	 			<div class="center-block" style="max-width:200px">
+					<button type="button" class="btn btn-default btn-md">Contact</button>
+					<button type="button" class="btn btn-default btn-md">Resume</button> 
+				</div>
+			</div><!--close header-->	
+		</div><!--close navigation-->
+	</div><!--closes jumbotron-->
+		
+<!--Above this line is where Glacier Pic goes as background-->		
+	
+	<div class="container briefback">
+		<div class="kellyphoto col-xs-4 col-xs-offset-1">
+			<p><img id="KellyPic" src="images/kellyphotoround.png"></img></p>
+		</div><!--closes kellyphoto-->
+		<div class="briefcontent col-xs-4 col-xs-offset-1">
+			<p></p>
+			<p>I'm currently attending Montana Code School, a twelve-week intensive coding bootcamp in beautiful Missoula.  My background is in education, and most recently I taught literacy courses at the University of Montana.  I developed a passion for programming while teaching my daughter and son to code.</p>
+		</div><!--closes briefcontent-->
+	</div><!--close briefback-->
+	
+	<div class="skillset">
+		<ul class="list-group col-xs-4 col-xs-offset-1">
+		  <li class="list-group-item">HTML5</li>
+		  <li class="list-group-item">Javascript</li>
+		  <li class="list-group-item">Node.js</li>
+		  <li class="list-group-item">React</li>
+		  <li class="list-group-item">Git</li>
+		</ul>
+
+		<ul class="list-group col-xs-4 col-xs-offset-1">
+		  <li class="list-group-item">CSS3</li>
+		  <li class="list-group-item">JQuery</li>
+		  <li class="list-group-item">Express.js</li>
+		  <li class="list-group-item">Heroku</li>
+		  <li class="list-group-item">GitHub</li>
+		</ul>
+	</div><!--close skillset-->
+	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<ul class="nav navbar-nav collapse navbar-collapse">
 					<li role="presentation" class="active"><a href="index.html">Home</a></li>
 					<li role="presentation"><a href="#">Portfolio</a></li>
 					<li role="presentation"><a href="indexblog.html">Blog</a></li>
 					<li role="presentation"><a href="#">About Me</a></li>
-					<li role="presentation"><a href="indexcontactpage.html">Contact Info</a></li>
-					<li role="presentation"><a href="/login.html">Log In</a></li>
-					<li role="presentation"><a href="/signup.html">Sign Up</a></li>
-					<li role="presentation"><a href="/logout">Sign Out</a></li>
-				</ul>
+					<li role="presentation"><a href="indexcontactpage.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-		</nav>
-		
-		<div id="header">
-			<div class="container-fluid">
-				<div class="jumbotron">
-					<h1>Kelly Nash</h1>
-					<p>Code student extraordinaire.</p>
-				</div><!--closes jumbotron-->
-
-				<div class="page-header">
-					<h1>Stuff I've learned. <small>It's a lot!</small></h1>
-				</div><!--closes page-header-->
+			<div class="row">
+				<div class="icons col-xs-6 col-xs-offset-4">
+					<ul class="nav navbar-nav collapse navbar-collapse">
+					<li role="presentation"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+					<li role="presentation"><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
+					</ul>
+				</div>
 			</div>
-		</div><!--closes id header-->
 
-		<div id="content">
-			<div class="picskills col-xs-offset-1">
-				<div class="row">
-					<div id="picture" class="col-xs-6 cell">
-						<p><img id="KellyPic" src="images/IMG_2242round.png"></img></p>
-						<p>Note to Doug: I couldn't find a solo picture of myself,</p> 
-						<p>so here I am with my daughter.</p>
-						<p><a href="/login">New Fancy Login Page!"</a></p>
-					</div><!--closes picture-->
-
-					<div id="skills" class="col-xs-6 cell">
-						<h2>These are my skills</h2>
-						<ul class="list-group">
-							<li class="list-group-item">HTML5</li>
-							<li class="list-group-item">CSS3</li>
-							<li class="list-group-item">Javascript</li>
-							<li class="list-group-item">Node.js</li>
-							<li class="list-group-item">Express.js</li>
-							<li class="list-group-item">GitHub</li>
-						</ul>
-					</div><!--closes skills-->
-				</div><!--closes row-->
-			</div><!--closes picskills offset-->
-
-			<div class="about me text">
-				<p>Note: I think this text will go next to my picture as a</p>
-				<p>brief introduction, and move my skill set below?</p>
-				<p>Anyway, here's some text: My interest in web development </p>
-				<p>stemmed from my interest in teaching my children to code. </p>
-				<p>Between developing websites and playing video games, I admittedly</p>
-				<p>spend most of my time in front of a screen. Some of my passions</p> 
-				<p>are writing clean code, creating user experiences and filling</p>
-				<p> up a fresh cup of coffee.</p>  
-			</div><!--close about me text-->
-		
-			<div class="well well-sm">
-				<div class="btn-group btn-group-justified" role="group" aria-	
-				label="...">
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">Resume</button>
+			<div class="row siteCounter">
+				<div class="col-xs-6 col-xs-offset-8">
+					<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
+					<p class="navbar-text">If you like this site, click the button!</p>
 				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">GitHub</button>
-				</div>
-				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-default">References</button>
-				</div>
-			</div><!--closes well-sm-->
-		</div><!--closes id content wrapper-->
-		</div><!--closes container=fluid-->
+			</div>
+		</div><!--close container-->
+	</div><!--close footer-->
 
-
-		<div id="footer">
-			<div class="footer">
-				<p>If you like this site, click the button below!</p>
-				<button onclick="siteCounter.counter();" id="counter" type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Site Counter: Click Me!</button>
-			</div><!--closes footer-->
-		</div><!--closed id footer wrapper-->
-	</div><!--closes wrapper-->
-
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="js/clicker.js"></script>
-	<script type="text/jsx" src="js/app.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/clicker.js"></script>
+		<script type="text/jsx" src="js/app.js"></script>
 </body>
-
 </html>

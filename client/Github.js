@@ -1,20 +1,20 @@
 var React = require('react');
 
 var Github = React.createClass({
-		render: function(){
-    var gitStuff = this.props.data.map(function (g){
-      if (g.coms) {
-        var commitInfo = g.coms.map(function (c){
-          return(
-            <div>
-              <p>{c.message}</p>
-              <p>{c.url}</p>
-            </div>
-          )
-        });
-      };
+	render: function(){
+	    var gitStuff = this.props.data.map(function (g){
+	      if (g.coms) {
+	        var commitInfo = g.coms.map(function (c){
+	          return(
+	            <div>
+	              <p>{c.message}</p>
+	              <p>{c.url}</p>
+	            </div>
+	          )
+	        });
+	      };
 
-	return(
+		return(
 		<div className="col-md-4">
 			<div className="panel panel-default box">
 				<h3 className="panel-header">Repo Name:</h3>

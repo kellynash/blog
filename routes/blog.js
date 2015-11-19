@@ -61,25 +61,6 @@ router.route('/')
        });
    })
 
-   // update the bear with this id (accessed at PUT http://localhost:8080/api/bears/:id)
-   // .put(function(req, res) {
-   //    Blog.findById(req.params.id, function(err, blog) {
-   //      if (err)
-   //        res.send(err);
-   //      blog.title = req.body.title;
-   //      blog.body = req.body.body;
-   //      console.log('put ' + JSON.stringify(blog));
-        
-   //      blog.save(function(err) {
-   //        if (err)
-   //          res.send(err);
-        
-   //        //res.json(blog);
-   //        res.json({message: "blog was updated"});
-   //      });
-   //    });
-   //  })
-
   .put(function(req, res) {
 
        mongoose.model('Blog').findById({
@@ -94,7 +75,7 @@ router.route('/')
            res.json(blog)
        });
    })
-   // delete the bear with this id (accessed at DELETE http://localhost:8080/api/blogs/:id)
+   // delete the blog with this id (accessed at DELETE http://localhost:8080/api/blogs/:id)
    .delete(function(req, res) {
        mongoose.model('Blog').remove({
            _id: req.params.id
@@ -105,5 +86,6 @@ router.route('/')
            res.json({ message: 'Successfully deleted' });
        });
    });
+
 
 module.exports = router;

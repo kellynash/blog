@@ -8,7 +8,6 @@ var BlogForm = React.createClass({
 		if(!title){
 			return;
 		}
-
 		var data = ({title: title, body: body});
 
 			$.ajax({
@@ -32,7 +31,6 @@ var BlogForm = React.createClass({
 
 	render: function() {
 		return (
-
 			<div className="container panel panel-default col-xs-10 col-xs-offset-1">
 				<div className="row">
 				<form action className="/api/blogs" role="form">
@@ -52,7 +50,6 @@ var BlogForm = React.createClass({
 				</div>
 			</div>
 		);
-
 	}
 });
 

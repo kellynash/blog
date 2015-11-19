@@ -19,4 +19,5 @@ fetchGithubEvents = function(req, res) {
 		});
 };
 
+
 module.exports = fetchGithubEvents;

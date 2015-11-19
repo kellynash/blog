@@ -21,7 +21,6 @@ var BlogList = React.createClass({
 	render: function() {
 		var blogData = this.props.data.map(function(blogItem){
 			return (
-				
 				<article className="panel panel-default col-xs-10 col-xs-offset-1">
 				<header className="panel-heading">
 				<h3 className="panel-title">{blogItem.title}</h3>
@@ -30,7 +29,6 @@ var BlogList = React.createClass({
 				</article>
 				);
 		});
-
 		return (
 			<div>
 			{blogData}
@@ -40,7 +38,6 @@ var BlogList = React.createClass({
 });
 
 var BlogBox = React.createClass({
-
 	getInitialState: function() {
 		return {data: []};
 	},
@@ -64,8 +61,6 @@ var BlogBox = React.createClass({
 	componentDidMount: function() {
 		this.loadBlogsFromServer();
 	},
-
-
 	//Set initial state
 	//Fetch data from our server (AJAX)
 	//Mount our data (state)
@@ -78,5 +73,6 @@ var BlogBox = React.createClass({
         );
     }
 });
+
 
 React.render(<BlogBox url="/api/blogs/"/>, document.getElementById('blog-list'));

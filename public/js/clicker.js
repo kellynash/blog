@@ -12,7 +12,4 @@ Clicker.prototype.counter = function() {
 var siteCounter = new Clicker(0);
 
 
-//var siteCounter = new Clicker(0);
-
-//console.log(siteCounter.count);
 

@@ -8,7 +8,6 @@ var Github = React.createClass({
 	          return(
 	            <div>
 	              <p>{c.message}</p>
-	              <p>{c.url}</p>
 	            </div>
 	          )
 	        });
@@ -17,13 +16,15 @@ var Github = React.createClass({
 		return(
 		<div className="col-md-4">
 			<div className="panel panel-default box">
-				<h3 className="panel-header">Repo Name:</h3>
+				<h3 className="panel-header">Recent GitHub Commits:</h3>
 				<div className="panel-body">
+					<h4>Repo Name:</h4>
 					<p>{g.repo}</p>
+					<h4>Commit Message:</h4>
 					<p>{commitInfo}</p>		
 					</div>
 					<div className="panel-footer">
-						<p>ID: {g.id} </p>
+						<p>Time Stamp: {g.timeStamp} </p>
 					</div>
 				</div>
 			</div>

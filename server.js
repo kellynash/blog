@@ -4,6 +4,7 @@ var http = require('http');
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var db = require('./model/db');
+var comment = require('./model/comment');
 var blogModel = require('./model/blog');
 var blogRoutes = require('./routes/blog');
 var passport = require('passport');

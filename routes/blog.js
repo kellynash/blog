@@ -9,19 +9,20 @@ router.use(bodyParser.urlencoded({ extended: true }))
 var validBlogs = [];
 
 function filterByTitle(obj) {
- if ('title' in obj && typeof(obj.title) === 'string') {
-   validBlogs.push(obj);
-   return true;
- } else {
-   return false;
- }
+   if ('title' in obj && typeof(obj.title) === 'string') {
+     validBlogs.push(obj);
+     return true;
+   } else {
+     return false;
+   }
 };
 
 router.route('/')
-
 /* GET All Blogs */
  .get(function(req, res) {
-   mongoose.model('Blog').find({}, function(err, blogs){
+   mongoose.model('Blog').find({})
+    .populate('comments')
+    .exec(function(err, blogs){
      if(err){
        return console.log(err);
      } else {
@@ -88,4 +89,44 @@ router.route('/')
    });
 
 
+//Code below allows me to post a comment on someone's blog.  Get their blog _id, then can post there.
+router.route('/:id/comment')
+  .post(function(req, res) {
+
+    mongoose.model('Comment').create({
+      body: req.body.body,
+      user: req.user
+
+  }, function(err, comment) {
+      if(err)
+        res.send(err)
+
+      mongoose.model('Blog').findById({
+        _id: req.params.id
+
+    }, function(err, blog){
+        if(err)
+          res.send(err)
+        blog.comments.push(comment._id);
+        blog.save();
+        res.send(comment);
+     })
+  })
+})
+
+
+//the "populate" below allows the comments section to have actual information rather than just ids
+router.route('/:id/comments')
+  .get(function(req, res) {
+    mongoose.model('Blog').findById({_id: req.params.id})
+      .populate('comments').exec(function(err, comments){
+        if(err)
+          res.send(err)
+        res.send(comments)
+      })
+})
+
+
 module.exports = router;
+
+

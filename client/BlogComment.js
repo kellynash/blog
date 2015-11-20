@@ -38,7 +38,7 @@ var BlogComment = React.createClass({
 					<legend>Add a comment</legend>
 
 					<div className="form-group" method="POST">
-						<label htmlFor="body">Comment Body</label>
+						<label htmlFor="body">Comment body</label>
 						<textarea name="body" type="text" className="form-control" ref="body" placeholder="Input field" rows="5"/>
 					</div>
 

@@ -4,12 +4,12 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: { 
-    home: [
-    './client/blogIndex'], 
-    blogForm: [
-    './client/blogFormIndex'],
-    index: [
-    './client/index']
+    home: 
+    './client/blogIndex', 
+    blogForm: 
+    './client/blogFormIndex',
+    index: 
+    './client/index'
   },
     output: {
     path: path.join(__dirname, 'static'),

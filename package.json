@@ -46,7 +46,7 @@
     "react": "^0.13.0"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "4.1.1"
   },
   "repository": {
     "type": "git",

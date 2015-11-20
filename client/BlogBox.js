@@ -25,7 +25,7 @@ var BlogList = React.createClass({
 				<h3 className="panel-title">{blogItem.title}</h3>
 				</header>
 				<section className="article-body">{blogItem.body}</section>
-				<h4>comments</h4>
+				<h4>Comments from my lovely readers...</h4>
 				<section className="article-body">{blogComment}</section>
 				</article>
 				

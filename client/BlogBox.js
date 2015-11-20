@@ -1,24 +1,45 @@
 var React = require('react');
+var BlogComment = require('./BlogComment');
 
 var BlogList = React.createClass({
 	//Loop through our data and create tweets
 	render: function() {
 		var blogData = this.props.data.map(function(blogItem){
+			console.log(blogItem);
+			if (blogItem.comments.length > 0) {
+		        var blogComment = blogItem.comments.map(function (c){
+		        	return(
+		        		<div className="comment">
+		        			<p className="commentBody"> {c.body} </p>
+		        		</div>
+		        	)
+		        });
+	        } else {
+	        	var blogComment = "no comment yet"
+	        };
+
 			return (
+				<div>
 				<article className="panel panel-default col-xs-10 col-xs-offset-1">
 				<header className="panel-heading">
 				<h3 className="panel-title">{blogItem.title}</h3>
 				</header>
 				<section className="article-body">{blogItem.body}</section>
+				<h4>comments</h4>
+				<section className="article-body">{blogComment}</section>
 				</article>
-				);
+				
+					<BlogComment blogID={blogItem._id}/>
+				</div>
+			)
 		});
-		return (
-			<div>
+	
+	return (
+		<div>
 			{blogData}
-        </div>
-        );
-    }
+    	</div>
+    )
+   }
 });
 
 var BlogBox = React.createClass({
@@ -48,7 +69,7 @@ var BlogBox = React.createClass({
 	//Set initial state
 	//Fetch data from our server (AJAX)
 	//Mount our data (state)
-	//Display tweet list
+	//Display blog list
     render: function() {
         return (
         

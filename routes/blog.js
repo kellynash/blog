@@ -54,7 +54,7 @@ router.route('/')
    .get(function(req, res) {
        mongoose.model('Blog').findById({
            _id: req.params.id
-       }, function(err, blog) {
+       }).populate('comments').exec(function(err, blog) {
            if (err)
                res.send(err);
 

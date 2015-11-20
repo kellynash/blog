@@ -1,7 +1,5 @@
 var React = require('react');
 
-//FORMERLY postBlog.js in js file
-
 var BlogForm = React.createClass({
 	handleSubmit: function(e){
 		e.preventDefault();

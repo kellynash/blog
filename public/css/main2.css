@@ -4,12 +4,16 @@ html {
 } /* Position relative and min-height required for sticky footer; */
 
 body { 
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Arimo','Helvetica Neue', Helvetica, Arial, sans-serif;
   padding-bottom: 70px; 
   /*background-color: #EBEFFA;*/
   /*background-color: rgb(88, 132, 212);*/
   /*background-color: rgb(119, 167, 246);*/
-  background-color: rgb(128, 185, 245);
+  /*background-color: rgb(128, 185, 245);*/
+
+  /*background-color: rgb(117, 126, 127);*/
+  background-color: #d6d6ff;
+  /*background-color: rgb(128, 185, 245);*/
   margin-bottom: 80px;  /* Margin bottom by footer height */
 }
 
@@ -51,6 +55,13 @@ h1 {
 .skillset {
   padding-top: 30px;
   padding-bottom: 200px;
+  margin-bottom: 70px;
+}
+
+#skillbox {
+  border: 5px;
+  border-color: green;
+  border-style: solid;
 }
 
 .skillset ul {

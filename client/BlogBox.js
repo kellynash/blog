@@ -1,25 +1,5 @@
 var React = require('react');
 
-//THIS WAS COPIED FROM app.js in js folder. (I didn't copy Doug's code from github.)
-
-
-// $(window).load(function() {
-// 	//showMe();
-
-// 	$.getJSON( "/api/blogs", function( data ) {
-// 		var items = [];
-// 		$.each( data, function( key, val ) {
-// 			items.push( "<article class=\"container\"><article class=\"panel panel-default col-xs-10 col-xs-offset-1\"><header class=\"panel-heading\"><h3 class=\"panel-title\">" + val.title 
-// 			+ "</h3></header><section class=\"article-body\">"
-// 			+ val.body + "</section></article></article>" );
-// 		});
-// 		$( "<div/>", {
-// 			"class": "my-new-list",
-// 			html: items.join( "" )
-// 		}).appendTo( "#blog-list" );
-// 	});
-// }); 
-
 var BlogList = React.createClass({
 	//Loop through our data and create tweets
 	render: function() {

@@ -32,21 +32,19 @@ var BlogComment = React.createClass({
 
 	render: function() {
 		return (
-			<div className="container panel panel-default col-xs-10 col-xs-offset-1">
-				<div className="row">
+			<div className="panel panel-default col-xs-10 col-xs-offset-1">
+				<div className="row col-xs-10 col-xs-offset-1">
 				<form action className="/api/blogs" role="form">
-					<legend>Add a comment</legend>
-
+					<h4 className="well well-sm">Add a comment</h4>
 					<div className="form-group" method="POST">
-						<label htmlFor="body">Comment body</label>
+						<label htmlFor="body">Put your two cents below!</label>
 						<textarea name="body" type="text" className="form-control" ref="body" placeholder="Input field" rows="5"/>
 					</div>
-
 					<button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary"> Submit </button>
 				</form>
 				</div>
 			</div>
-		);
+		);ß
 	}
 });
 

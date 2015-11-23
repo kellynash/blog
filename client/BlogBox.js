@@ -1,21 +1,24 @@
 var React = require('react');
 var BlogComment = require('./BlogComment');
 
+
 var BlogList = React.createClass({
 	//Loop through our data and create tweets
 	render: function() {
+		var self = this;
 		var blogData = this.props.data.map(function(blogItem){
 			console.log(blogItem);
 			if (blogItem.comments.length > 0) {
 		        var blogComment = blogItem.comments.map(function (c){
 		        	return(
 		        		<div className="comment">
+		        			<h5 className="well well-sm">{c.user.local.userName}</h5>
 		        			<p className="commentBody"> {c.body} </p>
 		        		</div>
 		        	)
 		        });
 	        } else {
-	        	var blogComment = "no comment yet"
+	        	var blogComment = "(No comments yet.)"
 	        };
 
 			return (
@@ -28,10 +31,10 @@ var BlogList = React.createClass({
 				<h4 className="well well-sm">Comments from readers...</h4>
 				<section className="article-body">{blogComment}</section>
 				</article>
-					<BlogComment blogID={blogItem._id}/>
+				<BlogComment blogID={blogItem._id} onPost={self.props.newData}/>
 				</div>
 			)
-		});
+		}.bind(this));
 	
 		return (
 			<div>
@@ -70,10 +73,14 @@ var BlogBox = React.createClass({
 	//Mount our data (state)
 	//Display blog list
     render: function() {
+    	var self = this;
+    	var doRefresh = function(){
+    		self.loadBlogsFromServer()
+    	}
         return (
-        
-          <BlogList data={this.state.data}/>
-          	
+        	<div>
+          	<BlogList data={this.state.data} newData={doRefresh}/>
+          	</div>
         );
     }
 });

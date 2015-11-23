@@ -15,6 +15,7 @@ var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var githubRoutes = require('./routes/github');
 
+
 var app = express();
 
 require('./config/passport')(passport); // pass passport for configuration

@@ -37,7 +37,7 @@ var BlogComment = React.createClass({
 				<form action className="/api/blogs" role="form">
 					<h4 className="well well-sm">Add a comment</h4>
 					<div className="form-group" method="POST">
-						<label htmlFor="body">Put your two cents below</label>
+						<label htmlFor="body">Put your TWO cents below</label>
 						<textarea name="body" type="text" className="form-control" ref="body" placeholder="Input field" rows="5"/>
 					</div>
 					<button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary"> Submit </button>

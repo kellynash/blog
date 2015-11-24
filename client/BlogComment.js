@@ -38,12 +38,12 @@ var BlogComment = React.createClass({
 			<div className="panel panel-default col-xs-10 col-xs-offset-1">
 				<div className="row col-xs-10 col-xs-offset-1">
 				<form action className="/api/blogs" role="form">
-					<h4 className="well well-sm">Add a comment</h4>
+					<h4 className="custColor well-sm col-xs-3 col-xs-offset-4 centerTitle">Add a comment...</h4>
 					<div className="form-group" method="POST">
-						<label htmlFor="body">Put your two cents below!</label>
+						<label className="col-xs-6" htmlFor="body">Put your two cents below!</label>
 						<textarea name="body" type="text" className="form-control" ref="body" placeholder="Input field" rows="5"/>
 					</div>
-					<button onClick={this.handleCommentSubmit}  type="submit" className="btn btn-primary"> Submit </button>
+					<button onClick={this.handleCommentSubmit}  type="submit" className="btn custColor"> Submit </button>
 				</form>
 				</div>
 			</div>

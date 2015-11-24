@@ -12,8 +12,8 @@ var BlogList = React.createClass({
 		        var blogComment = blogItem.comments.map(function (c){
 		        	return(
 		        		<div className="comment">
-		        			<h5 className="well well-sm">{c.user.local.userName}</h5>
-		        			<p className="commentBody"> {c.body} </p>
+		        			<h5 className="well well-sm custColor2 col-xs-4">Comment added by: {c.user.local.userName}</h5>
+		        			<p className="commentBody col-xs-10"> {c.body} </p>
 		        		</div>
 		        	)
 		        });
@@ -22,16 +22,18 @@ var BlogList = React.createClass({
 	        };
 
 			return (
-				<div>
+				<div className="container">
+				<div className="row">
 				<article className="panel panel-default col-xs-10 col-xs-offset-1">
-				<h4 className="well well-sm">{blogItem.title}</h4>
-				<section className="article-body">{blogItem.body}</section>
+				<h4 className="well well-sm col-xs-3 col-xs-offset-4 custColor centerTitle">{blogItem.title}</h4>
+				<section className="article-body blogText col-xs-10 col-xs-offset-1">{blogItem.body}</section>
 				<br className="break"></br>
 				<br className="break"></br>
-				<h4 className="well well-sm">Comments from readers...</h4>
-				<section className="article-body">{blogComment}</section>
+				<h4 className="well well-sm col-xs-3 col-xs-offset-4 custColor2 centerTitle">Comments from readers...</h4>
+				<section className="article-body col-xs-8">{blogComment}</section>
 				</article>
 				<BlogComment blogID={blogItem._id} onPost={self.props.newData}/>
+				</div>
 				</div>
 			)
 		}.bind(this));

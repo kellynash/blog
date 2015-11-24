@@ -14,20 +14,20 @@ var Github = React.createClass({
 	      };
 
 		return(
-		<div className="col-md-4">
-			<div className="panel panel-default box">
-				<h3 className="well well-sm">My Recent GitHub Commits:</h3>
-				<div className="panel-body">
-					<h4 className="well well-sm">Repo Name:</h4>
-					<p>{g.repo}</p>
-					<h4 className="well well-sm">Commit Message:</h4>
-					<p>{commitInfo}</p>		
-					</div>
-					<div className="panel-footer">
-						<p>Time Stamp: {g.timeStamp} </p>
+				<div className="col-md-4">
+					<div className="panel panel-default box">
+						<h3 className="well well-sm custColor centerTitle">My Recent GitHub Commits:</h3>
+						<div className="panel-body">
+						<h4 className="well well-sm custColor2">Repo Name:</h4>
+						<p>{g.repo}</p>
+						<h4 className="well well-sm custColor2">Commit Message:</h4>
+						<p>{commitInfo}</p>		
+						</div>
+						<div className="panel-footer">
+							<p>Time Stamp: {g.timeStamp} </p>
+						</div>
 					</div>
 				</div>
-			</div>
 		);
 	});
 
